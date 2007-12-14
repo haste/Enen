@@ -1,0 +1,8 @@
+﻿## Interface: 20300
+## Title: Enen
+## Author: Haste
+## Version: 1.0
+## X-eMail: troeks@gmail.com
+## Notes: Bypass the 60 seconds limit on the whispers flash.
+
+flash.lua
