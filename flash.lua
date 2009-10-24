@@ -29,13 +29,10 @@
   OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ---------------------------------------------------------------------------]]
 
-local _G = getfenv(0)
+FCF_FlashTab = function(self)
+	local tab = _G[self:GetName().."TabFlash"]
 
-_G.FCF_FlashTab = function()
-	local this = this
-	local tab = _G[this:GetName().."TabFlash"]
-
-	if(not this.isDocked or (this == SELECTED_DOCK_FRAME) or UIFrameIsFlashing(tab)) then
+	if(not self.isDocked or (self == SELECTED_DOCK_FRAME) or UIFrameIsFlashing(tab)) then
 		return
 	end
 	tab:Show()
